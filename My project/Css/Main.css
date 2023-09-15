@@ -1,0 +1,106 @@
+.main_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 5%;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 1000;
+	font-size: 4vmin;
+}
+
+.filter{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 5%;
+	margin-top: 10px;
+	margin-bottom: 0px;
+
+	.add_rules{
+		padding: 8px;
+		border: 0;
+		border-radius: 5px;
+		text-align: center;
+		background-color: rgb(201, 81, 244);
+		box-shadow: 2px 2px rgb(146, 24, 190);
+
+	}
+
+	.text{
+		font-size: 15px;
+	}
+}
+
+.table_position{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin: 5%;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+
+.three_dop {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  margin:auto !important;
+  transform: rotate(0.25turn);
+  font-size: 20px;
+  border: 0;
+  background-color: transparent;
+  animation: rotate-dop 3s linear;
+}
+
+.btn:before {
+  height: 0%;
+  width: 2px;
+}
+.btn:hover {
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+@media screen and (max-width: 600px) {
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}

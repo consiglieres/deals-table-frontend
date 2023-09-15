@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test server</title>
+	<link rel="stylesheet" href="/Css/Main.css">
+	<link rel="stylesheet" href="/Css/ResetTeg.css">
+	<link rel="stylesheet" href="/Css/Modal.css">
+	<link rel="stylesheet" href="/Css/Modal window custom.css">
+</head>
+<body>
+	<div class="main_text">Правила перевода сделок</div>
+	<section class="filter">
+		<button class="add_rules btn"><p class="text" id="open-modal-btn">Добавить правила</p></button>
+	</section>
+
+	<section class="table_position">
+		<table>
+			<thead>
+				<tr>
+					<th scope="col">ID <div class=""></div></th>
+					<th scope="col">Входной этап</th>
+					<th scope="col">Переводить в этап</th>
+					<th scope="col">Кол-во сделок</th>
+					<th scope="col">Время работы</th>
+					<th scope="col">Теги для отбора сделок</th>
+					<th scope="col">Действия</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td data-label="Account"></td>
+					<td data-label="Due Date"></td>
+					<td data-label="Amount"></td>
+					<td data-label="Period"></td>
+					<td data-label="Period"></td>
+					<td data-label="Period"></td>
+					<td data-label="Period"><button class="three_dop" id="click_button">...</button></td>
+				</tr>
+				<tr>
+					<td scope="row" data-label="Account"></td>
+					<td data-label="Due Date"></td>
+					<td data-label="Amount"></td>
+					<td data-label="Period"></td>
+					<td data-label="Period"></td>
+					<td data-label="Period"></td>
+					<td data-label="Period"><button class="three_dop">...</button></td>
+				</tr>
+				<tr>
+					<td scope="row" data-label="Account"></td>
+					<td data-label="Due Date"></td>
+					<td data-label="Amount"></td>
+					<td data-label="Period"></td>
+					<td data-label="Period"></td>
+					<td data-label="Period"></td>
+					<td data-label="Period"><button class="three_dop">...</button></td>
+				</tr>
+				<tr>
+					<td scope="row" data-label="Acount"></td>
+					<td data-label="Due Date"></td>
+					<td data-label="Amount"></td>
+					<td data-label="Period"></td>
+					<td data-label="Period"></td>
+					<td data-label="Period"></td>
+					<td data-label="actions"><button class="three_dop">...</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+
+
+	<div class="modal" id="my-modal">
+		<div class="modal__box">
+				<button class="modal__close-btn" id="close-my-modal-btn">
+						<svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.09082 0.03125L22.9999 22.0294L20.909 24.2292L-8.73579e-05 2.23106L2.09082 0.03125Z"
+										fill="#333333" />
+								<path d="M0 22.0295L20.9091 0.0314368L23 2.23125L2.09091 24.2294L0 22.0295Z" fill="#333333" />
+						</svg>
+				</button>
+<!--Описание внутренней части модального окна-->
+
+				<sector>
+					<div class="text_interval">Интервал работы виджета</div>
+					<input class="one_interval" id="one_interval_button">
+					<input class="two_interval" id="two_interval_button">
+				</sector>
+				
+				<section class="">
+					<div class class="">Количество сделок для преевода</div>
+					<input class="">
+				</section>
+
+				<section class="">
+					<div class="">Этап воронки для отбора сделок</div>
+					<input class="">
+				</section>
+
+				<section class="">
+					<div class="">Распределение по папкам</div>
+					<input class="">
+				</section>
+
+				<section class="">
+					<div class="">Теги для отбора сделок</div>
+					<input type="">
+				</section>
+
+				<section class=""> 
+					<div class="">Этап воронки для перевода сделок</div>
+					<input class="">
+				</section>
+
+				<section class="">
+					<button class="save"></button>
+					<button class="cancel"></button>
+				</section>
+
+
+
+		</div>
+</div>
+	
+	
+	<script src="/Js/Main.js"></script>
+
+</body>
+</html>

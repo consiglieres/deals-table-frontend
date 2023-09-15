@@ -1,0 +1,12 @@
+.text_interval{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+
+	.one_interval .two_interval{
+		display: block;
+		border: 1px solid black;
+		border-radius: 10px;
+	}
+}
